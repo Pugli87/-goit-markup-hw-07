@@ -732,13 +732,13 @@ img{
 
 /* --------------- Redes sociales --------------- */
 
-/* .cont-social{
+.cont-social{
     flex-direction: column;
     width: 206px;
     margin-right: 90px;
 }
 
-.title-footer{
+.cont-social__title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -748,7 +748,12 @@ img{
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.social{
+    margin-top: 16px;
+}
 
+
+/* 
 .icon-nav{
     margin-top: 16px;
     display: flex;
