@@ -671,7 +671,7 @@ img{
 
 /* contenedor principal footer */
 
-.footer-contact{
+.footer{
     background-color: var(--background-2);
 }
 
@@ -685,11 +685,11 @@ img{
 
 /* informacion de contacto */
 
-.cont-contact{
+.footer-contact{
     margin-right: 70px ;
 }
 
-.logo-footer{
+.footer-contact__logo{
     display: flex;
     margin-bottom: 6px;
     color: var(--hover-color);
@@ -702,30 +702,31 @@ img{
     letter-spacing: 0.03em;
 }
 
-.span-logo-footer{
+.footer-contact__span{
     color: var(--background-color);
 }
 
-.footer-contact-list{
+.footer-contact__list{
     width: 231px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.03em;
 }
 
-.footer-contact-list-dir{
+.footer-contact__dir{
     color: var(--background-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-list-item{
+.footer-contact__item{
     display: flex;
     margin-bottom: 9px;
     color: var(--gray-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-list-item:hover, .footer-contact-list.item:focus{
+.footer-contact__item:hover, .footer-contact__item:focus,
+.footer-contact__dir:hover, .footer-contact__dir:focus{
     color: var(--hover-color);
     fill: var(--hover-color);
 }
@@ -752,50 +753,19 @@ img{
     margin-top: 16px;
 }
 
-
-/* 
-.icon-nav{
-    margin-top: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 10px;
-}
-
-.icon-footer{
-    display: flex;
-    flex-basis: calc(( 100%-30px )/4);
-}
-
-.footer-media{
-    border-radius: 50%;
-    height: 44px;
-    padding: 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: #afb1b8;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-media:hover, .footer-media:focus{
-    outline: none;
-    background-color: var(--hover-color);
-    fill: var(--background-color);
-} */
-
-
 /* -------------- Formulario footer -------------- */
 
 .form-email{
     flex-direction: column;
 }
 
-.cont-form{
+.footer-form{
     display: flex;
     width: 570px;
     height: 86px;
 }
 
-.form-email label{
+.footer-form__label{
     color: var(--background-color);
     width: 358px;
     font-weight: 700;
@@ -806,7 +776,7 @@ img{
     margin-right: 12px;
 }
 
-.form-email input{
+.footer-form__input{
     margin-top: 20px ;
     background-color: var(--background-2);
     width: 358px;
@@ -820,11 +790,13 @@ img{
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-email input:hover, .form-email input:focus{
+.footer-form__input:hover, .footer-form__input:focus{
     outline: 1px solid var(--hover-color);
 }
 
-.footer-button{  
+
+
+.footer-form__button{  
     display: flex; 
     position: relative;
     width: 200px;
@@ -838,12 +810,12 @@ img{
     border-radius: 4px;
 }
 
-.footer-button:hover, .footer-button:focus{
+.footer-form__button:hover, .footer-form__button:focus{
     outline: 1px solid var(--hover-color);
 }
 
 
-.footer-button span{
+.footer-form__span{
     position: absolute;
     left: 39px;
     top: 10px;
@@ -857,7 +829,7 @@ img{
     color: #FFFFFF;
 }
 
-.form-email svg {
+.footer-form__icon {
     position: absolute;
     left: 148px;
     top: 13px;
