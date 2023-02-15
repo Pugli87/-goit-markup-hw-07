@@ -487,28 +487,28 @@
     </main>
 
     <!-- Pie de pagina -->
-    <footer class="footer-contact">
+    <footer class="footer">
       <div class="container footer-cont">
         <!-- contacto -->
-        <div class="cont-contact" >
-          <a href="#" class="logo-footer">Web<span class="span-logo-footer">Studio</span></a>
+        <div class="footer-contact" >
+          <a href="#" class="footer-contact__logo">Web<span class="footer-contact__span">Studio</span></a>
           <address>
-            <ul class="footer-contact-list">
+            <ul class="footer-contact__list">
               <li>
                 <a href="https://maps.app.goo.gl/BWaf5SakouGZPz1Z8" 
-                  class="footer-contact-list-dir">
+                  class="footer-contact__dir">
                   Calz. Ticomán 500 Ciudad de Mexico,CDMX, Mexico
                 </a>
               </li>
               <li>
                 <a href="mailto:info@devstudio.com" 
-                  class=" footer-contact-list-item">
+                  class=" footer-contact__item">
                   info@devstudio.com
                 </a>
               </li>
               <li>
                 <a href="tel:+525555296000" 
-                  class="footer-contact-list-item">
+                  class="footer-contact__item">
                   +52 55 5529 6000</a>
               </li>
             </ul>
@@ -519,36 +519,6 @@
           <h3 class="cont-social__title">encuentranos en</h3>
 
           <!-------------------- redes sociales -------------------->
-          <!-- <ul class="icon-nav">
-            <li class="icon-footer">
-              <a href="" class="footer-media">                
-                <svg width="20px" height="20px">
-                <use href="./imagenes/icon.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-footer">
-              <a href="" class="footer-media">                
-                <svg width="20px" height="20px">
-                  <use href="./imagenes/icon.svg#icon-twitter" ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-footer">
-              <a href="" class="footer-media">                
-                <svg width="20px" height="20px">
-                  <use href="./imagenes/icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-footer">
-              <a href="" class="footer-media">                
-                <svg width="20px" height="20px">
-                  <use href="./imagenes/icon.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul> -->
           <ul class="social-cont social">
             <li class="social-cont__item">
               <a href="" class="social-cont__icon">                
@@ -580,21 +550,23 @@
             </li>
           </ul>
         </div>
+
         <!-- formulario -->          
         <div class="form-email">
-          <form name="" class="cont-form">
-            <label>
+          <form name="" class="footer-form">
+            <label class="footer-form__label">
               suscríbase al boletín informativo
-              <input type="email" name="suscríbase al boletín informativo" placeholder="Correo electronico" required autocomplete="off"/>
+              <input class="footer-form__input" type="email" name="suscríbase al boletín informativo" placeholder="Correo electronico" required autocomplete="off"/>
             </label>
-            <button type="submit" class="footer-button">
-              <span> suscríbase </span>                           
-                <svg width="24px" height="24px">
+            <button type="submit" class="footer-form__button">
+              <span class="footer-form__span"> suscríbase </span>                           
+                <svg class="footer-form__icon" width="24px" height="24px">
                   <use href="./imagenes/icon.svg#icon-enviar-icono"></use>
                 </svg>
             </button>     
           </form>        
-        </div>        
+        </div>   
+
       </div>
     </footer>
     <!-- Vinculacion js al html -->
