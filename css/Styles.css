@@ -1,3 +1,5 @@
+
+
 *,
 *::after,
 *::before{
@@ -958,10 +960,3 @@ img{
     letter-spacing: 0.03em;
     color:var(--gray-color);
 }
-
-
-
-
-
-
-
