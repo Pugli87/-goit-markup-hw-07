@@ -37,6 +37,10 @@ img{
 	height: auto;
 } 
 
+:focus-visible{
+    outline: 1px solid var(--hover-color);
+}
+
 .visually-hidden{
     position: absolute;
     width: 1px;

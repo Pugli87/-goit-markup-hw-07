@@ -1,44 +1,46 @@
 
 /* -------------- Seccion caracteristicas --------------- */
+.characteristics{
 
-.characteristics__list{    
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    &__list{    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
 
-    letter-spacing: 0.03em;
-}
+        letter-spacing: 0.03em;
+    }
 
-.characteristics__item{
-    flex-basis: calc((100% - 90px) / 4);
-}
+    &__item{
+        flex-basis: calc((100% - 90px) / 4);
+    }
 
-.characteristics__icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-}
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+    }
 
-.characteristics__title{
-    display: block;
-    width: 270px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
+    &__title{
+        display: block;
+        width: 270px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
 
-.characteristics__text{
-    display: block;
-    align-items: baseline;
+    &__text{
+        display: block;
+        align-items: baseline;
 
-    width: 270px;
-    line-height: 1.7;
-    color: var(--gray-color);
+        width: 270px;
+        line-height: 1.7;
+        color: var(--gray-color);
+    }
 }
