@@ -1,8 +1,5 @@
 
-/* -------------------------------------------------------------------------------- */
-/* ---------------------------------- Portafolio ---------------------------------- */
-/* -------------------------------------------------------------------------------- */
-
+@use '../utils/variables';
 .briefcase-list{
     display: flex;
     justify-content: center;
@@ -19,7 +16,7 @@
         cursor: pointer;
         font-family: inherit;
         border: none;
-        background-color: var(--background-botton);
+        background-color: variables.$background-botton;
         border-radius: 4px;
         font-weight: 500;
         font-size: 16px;
@@ -33,8 +30,8 @@
         
         &:hover,&:focus{
             outline: none;
-            background-color: var(--hover-color);
-            color: var(--background-color);
+            background-color: variables.$hover-color;
+            color: variables.$background-primary;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
             0px 1px 2px rgba(0, 0, 0, 0.08), 
             0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -53,7 +50,7 @@
 
     &__item{
         cursor: pointer;
-        background-color: var(--background-1);
+        background-color: variables.$background-primary;
         flex-basis: calc((100% - 60px) / 3);
         justify-content: center;
         border: 1px solid #EEEEEE;    
@@ -72,8 +69,6 @@
 
     &__transition{
 
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
         line-height: 1.5;
         letter-spacing: 0.03em;
@@ -81,7 +76,7 @@
         width: 100%;
         height: 100%;
         background-color: rgba(33, 150, 243, 0.9);
-        color: #FFFFFF;
+        color: variables.$background-primary;
         position: absolute;
         top: 0;
         left: 0;
@@ -108,7 +103,7 @@
             line-height: 2;
             letter-spacing: 0.06em;
             text-align: left;
-            color: var(--body-color);    
+            color: variables.$primary-color;    
         }
 
         &__text{
@@ -116,7 +111,7 @@
             font-size: 16px;
             line-height: 30px;
             letter-spacing: 0.03em;
-            color:var(--gray-color);
+            color:variables.$secundary-color;
         }
     }
 }

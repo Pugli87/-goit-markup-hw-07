@@ -1,7 +1,6 @@
-/* contenedor principal footer */
-
+@use '../utils/variables';
 .footer{
-    background-color: var(--background-2);
+    background-color: variables.$background-secundary;
 }
 
 /* contenedor de contacto */
@@ -10,6 +9,7 @@
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 
 /* informacion de contacto */
@@ -20,9 +20,8 @@
     &__logo{
         display: flex;
         margin-bottom: 6px;
-        color: var(--hover-color);
+        color: variables.$hover-color;
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
@@ -31,35 +30,34 @@
     }
 
     &__span{
-        color: var(--background-color);
+        color: variables.$secundary-color;
     }
 
     &__list{
         width: 231px;
-        font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.03em;
     }
 
     &__dir{
-        color: var(--background-color);
+        color: variables.$background-primary;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover, &:focus{
-            color: var(--hover-color);
-            fill: var(--hover-color); 
+            color: variables.$hover-color;
+            fill: variables.$hover-color; 
         }
     }
 
     &__item{
         display: flex;
         margin-bottom: 9px;
-        color: var(--gray-color);
+        color: variables.$secundary-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover, &:focus{
-            color: var(--hover-color);
-            fill: var(--hover-color); 
+            color: variables.$hover-color;
+            fill: variables.$hover-color; 
         }
     }
 }
@@ -81,14 +79,14 @@
         height: 44px;
         padding: 12px;
         background-color: rgba(255, 255, 255, 0.1);
-        fill: #afb1b8;
+        fill: variables.$background-primary;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover, &:focus{
         outline: none;
-        background-color:var(--hover-color);
-        fill: var(--background-color);
+        background-color: variables.$hover-color;
+        fill: variables.$background-primary;
         }
     }
 }
@@ -104,7 +102,7 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: variables.$background-primary;
     }
 }
 
@@ -124,7 +122,7 @@
     height: 86px;
 
     &__label{
-        color: var(--background-color);
+        color: variables.$background-primary;
         width: 358px;
         font-weight: 700;
         font-size: 14px;
@@ -136,7 +134,7 @@
 
     &__input{
         margin-top: 20px ;
-        background-color: var(--background-2);
+        background-color: variables.$background-secundary;
         width: 358px;
         height: 50px;
         padding-left: 16px;
@@ -148,7 +146,7 @@
         transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover, &:focus{
-            outline: 1px solid var(--hover-color);
+            outline: 1px solid variables.$hover-color;
         }
     }
 
@@ -161,12 +159,12 @@
         padding: 0;
         cursor: pointer;
         border: none;
-        background: #2196F3;
+        background: variables.$hover-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         
         &:hover, &:focus{
-            outline: 1px solid var(--hover-color);
+            outline: 1px solid variables.$hover-color;
         }
     }
 
@@ -183,7 +181,7 @@
         letter-spacing: 0.06em;
         text-transform: capitalize;
 
-        color: #FFFFFF;
+        color: variables.$background-primary;
     }
 
     &__icon {

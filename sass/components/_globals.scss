@@ -1,3 +1,4 @@
+@use '../utils/variables';
 *,
 *::after,
 *::before{
@@ -8,8 +9,8 @@ body{
     font-size: 14px;
     font-family: "roboto", sans-serif;
     letter-spacing:  10px;
-    color: var(--body-color);
-    background-color:var(--background-1);
+    color: variables.$primary-color;
+    background-color: variables.$background-primary;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul{
@@ -38,7 +39,7 @@ img{
 } 
 
 :focus-visible{
-    outline: 1px solid var(--hover-color);
+outline: 1px solid variables.$hover-color;
 }
 
 .visually-hidden{

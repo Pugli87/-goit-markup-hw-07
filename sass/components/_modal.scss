@@ -1,7 +1,4 @@
-
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------- Ventana el modal ------------------------------ */
-/* ------------------------------------------------------------------------------- */
+@use '../utils/variables';
 
 .backdrop{
     width: 100%;
@@ -47,19 +44,22 @@
         width: 30px;
         height: 30px;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color:white;
+        background-color: variables.$background-primary;
         border-radius: 50%;
         fill: var(--body-color);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover, &:focus{
-            fill: var(--hover-color);
+            fill: variables.$hover-color;
             outline: 1px solid rgba(0, 0, 0, 0.1);
         }
     }
+    
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
     }
+
+
 }  
 
 /* Estilos del formulario */
@@ -81,166 +81,166 @@
         line-height: 30px;
         letter-spacing: 0.06em;
     
-        background: #188CE8;
+        background-color: variables.$hover-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
     
         border: none;
-        color: var(--background-color);
+        color: variables.$background-primary;
         text-transform: capitalize;
     }
-}
 
-.group{
+    .group{
     margin-bottom: 10px;
 
-    &__title{
-        width: 100%;
-        height: 23px;
-        margin-bottom: 12px;
+        &__title{
+            width: 100%;
+            height: 23px;
+            margin-bottom: 12px;
 
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
-        text-align: center;
-        letter-spacing: 0.03em;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.03em;
 
-        color: #212121;
+            color: variables.$primary-color;
+        }
+
+        &__label{
+            display: flex;
+            flex-direction: column;
+
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            text-transform: capitalize;
+
+            color: variables.$secundary-color;  
+            margin-bottom: 10px;  
+        }
+
+        &__cont{
+            position: relative;
+            margin-top: 4px;
+        }
+
+        &__input{
+            border: 1px solid variables.$secundary-color;
+            
+            padding-top: 12px;
+            padding-right: 12px;
+            padding-bottom: 12px;
+            padding-left: 42px;
+            width: 100%;
+            
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            fill: variables.$primary-color;
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover{
+                border: 1px solid variables.$hover-color;
+            }
+        }
+
+        &__svg{
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 18px;
+            height: 18px;
+            fill: #212121;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            .group__input:hover + &,
+            .group__input:focus + &{
+                fill: variables.$hover-color;
+            }
+        }
+
+        &__textarea{
+            margin-top: 4px;
+            width: 100%;
+            height: 120px;
+            padding: 12px 16px;
+
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            resize: none;
+
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+
+            &:hover{
+                border: 1px solid variables.$hover-color;
+            }
+
+            &::placeholder{
+                color: rgba(117, 117, 117, 0.5);
+            }
+        }
     }
 
-    &__label{
-        display: flex;
-        flex-direction: column;
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em;
-        text-transform: capitalize;
-
-        color: #757575;  
-        margin-bottom: 10px;  
-    }
-
-    &__cont{
+    .checkbox{ 
         position: relative;
-        margin-top: 4px;
-    }
+        text-align: center;
+        margin-bottom: 10px;
 
-    &__input{
-        border: 1px solid var(--gray-color);
-        
-        padding-top: 12px;
-        padding-right: 12px;
-        padding-bottom: 12px;
-        padding-left: 42px;
-        width: 100%;
-        
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        fill: var(--body-color);
-        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover{
-            border: 1px solid var(--hover-color);
-        }
-    }
-
-    &__svg{
-        position: absolute;
-        left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 18px;
-        height: 18px;
-        fill: #212121;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        .group__input:hover + &,
-        .group__input:focus + &{
-            fill: var(--hover-color);
-        }
-    }
-
-    &__textarea{
-        margin-top: 4px;
-        width: 100%;
-        height: 120px;
-        padding: 12px 16px;
-
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        resize: none;
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em;
-
-        &:hover{
-            border: 1px solid var(--hover-color);
+        &__label{
+            display: flex;
         }
 
-        &::placeholder{
-            color: rgba(117, 117, 117, 0.5);
-        }
-    }
-
-
-
-
-}
-.checkbox{ 
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-
-    &__label{
-        display: flex;
-    }
-
-   &__input{    
-        appearance: none;
-        position: absolute;
-        left: 0;
-        top: 50%;
-    }
-
-    &__svg{
-        position: absolute;
-        display: flex;
-        top: 27%;
-        left: 0%;
-        transform: translateY(-50%);
-        justify-content: center;
-        align-items: center;
-        fill: transparent;
-        width: 16px;
-        height: 15px;
-        border: 2px solid var(--body-color);
-        border-radius: 2px;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-        .checkbox__input:checked + & {
-            border-color: var(--hover-color);
-            background-color: var(--hover-color);
+    &__input{    
+            appearance: none;
+            position: absolute;
+            left: 0;
+            top: 50%;
         }
 
-    }
+        &__svg{
+            position: absolute;
+            display: flex;
+            top: 27%;
+            left: 0%;
+            transform: translateY(-50%);
+            justify-content: center;
+            align-items: center;
+            fill: transparent;
+            width: 16px;
+            height: 15px;
+            border: 2px solid variables.$primary-color;
+            border-radius: 2px;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+            .checkbox__input:checked + & {
+                border-color: variables.$hover-color;
+                background-color: variables.$hover-color;
+            }
 
-    &__text{  
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+        }
 
-        letter-spacing: 0.03em;
+        &__text{  
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
 
-        color: #757575;
-        padding-left: 24px;
-        text-align: left;
+            letter-spacing: 0.03em;
+
+            color: variables.$secundary-color;
+            padding-left: 24px;
+            text-align: left;
+        }
     }
 }
+
+
+
