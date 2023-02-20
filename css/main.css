@@ -548,20 +548,20 @@ img {
 
 .footer {
   background-color: #2F303A;
+  /*----------- contenedor de contacto -----------*/
 }
-
-/* contenedor de contacto */
-.footer-cont {
+.footer .footer-cont {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  /*----------- informacion de contacto -----------*/
+  /* --------------- Redes sociales --------------- */
+  /* -------------- Formulario  -------------- */
 }
-
-/* informacion de contacto */
-.footer-contact {
+.footer .footer-cont .footer-contact {
   margin-right: 70px;
 }
-.footer-contact__logo {
+.footer .footer-cont .footer-contact__logo {
   display: flex;
   margin-bottom: 6px;
   color: #2196F3;
@@ -572,64 +572,38 @@ img {
   text-align: right;
   letter-spacing: 0.03em;
 }
-.footer-contact__span {
+.footer .footer-cont .footer-contact__span {
   color: #757575;
 }
-.footer-contact__list {
+.footer .footer-cont .footer-contact__list {
   width: 231px;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
-.footer-contact__dir {
+.footer .footer-cont .footer-contact__dir {
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contact__dir:hover, .footer-contact__dir:focus {
+.footer .footer-cont .footer-contact__dir:hover, .footer .footer-cont .footer-contact__dir:focus {
   color: #2196F3;
   fill: #2196F3;
 }
-.footer-contact__item {
+.footer .footer-cont .footer-contact__item {
   display: flex;
   margin-bottom: 9px;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contact__item:hover, .footer-contact__item:focus {
+.footer .footer-cont .footer-contact__item:hover, .footer .footer-cont .footer-contact__item:focus {
   color: #2196F3;
   fill: #2196F3;
 }
-
-/* --------------- Redes sociales --------------- */
-.social-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 28px;
-}
-.social-cont__item {
-  display: flex;
-  flex-basis: calc((100% - 30px) / 4);
-}
-.social-cont__icon {
-  border-radius: 50%;
-  height: 44px;
-  padding: 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-cont__icon:hover, .social-cont__icon:focus {
-  outline: none;
-  background-color: #2196F3;
-  fill: #ffffff;
-}
-
-.cont-social {
+.footer .footer-cont .cont-social {
   flex-direction: column;
   width: 206px;
   margin-right: 90px;
 }
-.cont-social .cont-social__title {
+.footer .footer-cont .cont-social__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -637,22 +611,41 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-
-.social {
+.footer .footer-cont .cont-social .social-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.footer .footer-cont .cont-social .social-cont__item {
+  display: flex;
+  flex-basis: calc((100% - 30px) / 4);
+}
+.footer .footer-cont .cont-social .social-cont__icon {
+  border-radius: 50%;
+  height: 44px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .footer-cont .cont-social .social-cont__icon:hover, .footer .footer-cont .cont-social .social-cont__icon:focus {
+  outline: none;
+  background-color: #2196F3;
+  fill: #ffffff;
+}
+.footer .footer-cont .cont-social .social {
   margin-top: 16px;
 }
-
-/* -------------- Formulario footer -------------- */
-.form-email {
+.footer .footer-cont .form-email {
   flex-direction: column;
 }
-
-.footer-form {
+.footer .footer-cont .form-email .footer-form {
   display: flex;
   width: 570px;
   height: 86px;
 }
-.footer-form__label {
+.footer .footer-cont .form-email .footer-form__label {
   color: #ffffff;
   width: 358px;
   font-weight: 700;
@@ -662,7 +655,7 @@ img {
   text-transform: uppercase;
   margin-right: 12px;
 }
-.footer-form__input {
+.footer .footer-cont .form-email .footer-form__input {
   margin-top: 20px;
   background-color: #2F303A;
   width: 358px;
@@ -674,10 +667,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-form__input:hover, .footer-form__input:focus {
+.footer .footer-cont .form-email .footer-form__input:hover, .footer .footer-cont .form-email .footer-form__input:focus {
   outline: 1px solid #2196F3;
 }
-.footer-form__button {
+.footer .footer-cont .form-email .footer-form__button {
   display: flex;
   position: relative;
   width: 200px;
@@ -690,10 +683,10 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.footer-form__button:hover, .footer-form__button:focus {
+.footer .footer-cont .form-email .footer-form__button:hover, .footer .footer-cont .form-email .footer-form__button:focus {
   outline: 1px solid #2196F3;
 }
-.footer-form__span {
+.footer .footer-cont .form-email .footer-form__span {
   position: absolute;
   left: 39px;
   top: 10px;
@@ -704,7 +697,7 @@ img {
   text-transform: capitalize;
   color: #ffffff;
 }
-.footer-form__icon {
+.footer .footer-cont .form-email .footer-form__icon {
   position: absolute;
   left: 148px;
   top: 13px;
